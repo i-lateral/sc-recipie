@@ -1,0 +1,36 @@
+{
+    "name": "i-lateral/sc-recipe",
+    "type": "silverstripe-recipe",
+    "description": "SilverStripe recipe for fully featured page and asset content editing",
+    "homepage": "http://silverstripe.org",
+    "license": "BSD-3-Clause",
+    "require": {
+        "silvercommerce/silvercommerce-recipe": "1.*@dev",
+        "silverstripe/blog": "master",
+        "silverstripe/userforms": "5.*",
+        "silverstripe/widgets": "master",
+        "axllent/silverstripe-scaled-uploads": "^2.1",
+        "i-lateral/silverstripe-childhubpage": "^2.0",
+        "jonom/focuspoint": "^3.0",
+        "symbiote/silverstripe-gridfieldextensions": "3.1 as 3.0.x-dev",
+        "i-lateral/silverstripe-custommenus": "^2.0",
+        "fractas/cookiepolicy": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "^5.7"
+    },
+    "extra": {
+        "project-files": [
+            ".htaccess",
+            "app/*",
+            "themes/custom/*",
+            "index.php",
+            "web.config"
+        ]
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
