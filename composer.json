@@ -24,7 +24,7 @@
     "extra": {
         "project-files": [
             ".htaccess",
-            "app/*",
+            "mysite/*",
             "themes/custom/*",
             "index.php",
             "web.config"
