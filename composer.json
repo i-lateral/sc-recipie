@@ -23,6 +23,7 @@
     },
     "extra": {
         "project-files": [
+            ".vscode/*",
             ".gitignore",
             ".htaccess",
             "mysite/*",
