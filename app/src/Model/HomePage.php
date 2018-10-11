@@ -1,11 +1,14 @@
 <?php
 
 use SilverStripe\Forms\GridField\GridField;
-use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
 use SilverStripe\Forms\GridField\GridFieldEditButton;
-use SilverCommerce\CatalogueAdmin\Forms\GridField\GridFieldConfig_CatalogueRelated;
 use SilverCommerce\CatalogueAdmin\Model\CatalogueProduct;
+use SilverStripe\Lumberjack\Forms\GridFieldSiteTreeState;
 use SilverCommerce\CatalogueAdmin\Model\CatalogueCategory;
+use SilverStripe\Lumberjack\Forms\GridFieldSiteTreeEditButton;
+use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
+use Heyday\GridFieldVersionedOrderableRows\GridFieldVersionedOrderableRows;
+use SilverCommerce\CatalogueAdmin\Forms\GridField\GridFieldConfig_CatalogueRelated;
 
 class HomePage extends Page
 {

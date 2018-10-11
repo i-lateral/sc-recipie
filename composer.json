@@ -16,7 +16,8 @@
         "i-lateral/silverstripe-custommenus": "^2.0",
         "i-lateral/silverstripe-gallery": "^2.0",
         "i-lateral/silverstripe-socialnav": "^2.0",
-        "fractas/cookiepolicy": "^2.0"
+        "fractas/cookiepolicy": "^2.0",
+        "heyday/silverstripe-gridfieldversionedorderablerows": "ss4-upgrade-dev"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7"
@@ -29,6 +30,33 @@
             "app/*",
             "themes/custom/*",
             "index.php",
+            "web.config"
+        ],
+        "project-files-installed": [
+            ".gitignore",
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/config.yml",
+            "app/_config/mysite.yml",
+            "app/_config/payments.yml",
+            "app/_config/theme.yml",
+            "app/src/Control/CategoryController.php",
+            "app/src/Control/ContactPageController.php",
+            "app/src/Control/HomePageController.php",
+            "app/src/Control/PageController.php",
+            "app/src/Control/ProductController.php",
+            "app/src/Extensions/AppSiteConfig.php",
+            "app/src/Model/Category.php",
+            "app/src/Model/ContactPage.php",
+            "app/src/Model/HomePage.php",
+            "app/src/Model/Page.php",
+            "app/src/Model/Product.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "install-frameworkmissing.html",
+            "install.php",
             "web.config"
         ]
     },
