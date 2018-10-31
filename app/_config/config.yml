@@ -1,0 +1,28 @@
+---
+Name: appconfig
+---
+
+## CONFIG ##
+Axllent\ScaledUploads\ScaledUploads:
+  max_width: 1920
+  max_height: 1920
+ilateral\SilverStripe\Searchable\Searchable:
+  objects:
+    "Page": ["Title","MenuTitle","Content","URLSegment"]
+    "Product": ["Title","Content","URLSegment"]
+    "Category": ["Title","Content","URLSegment"]
+ilateral\SilverStripe\CustomMenus\Model\CustomMenuLink:
+  base_classes:
+    "Category": "A Product Category"
+    "Product": "A Product"
+ilateral\SilverStripe\Users\Users:
+  require_verification: false
+  send_verification_email: false
+SilverStripe\Core\Injector\Injector:
+  Fractas\CookiePolicy\CookiePolicy:
+    class: AppCookiePolicy
+
+## EXTENSIONS ##
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - AppSiteConfig
