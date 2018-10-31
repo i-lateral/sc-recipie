@@ -2,5 +2,6 @@ en:
   Gateway:
     PayPal_Express: "Pay via PayPal"
     SagePay_Direct: "Pay with credit/debit card via SagePay"
-    Manual: "Pay on Credit account"
+    Stripe: "Pay with credit/debit card via Stripe"
+    WorldPay: "Pay with credit/debit card via WorldPay"
     Dummy: "Test the payment process"

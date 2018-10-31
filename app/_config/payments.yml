@@ -3,9 +3,7 @@ Name: payment
 ---
 SilverStripe\Omnipay\Model\Payment:
   allowed_gateways:
-    - 'SagePay_Direct'
-    - 'PayPal_Express'
-    - 'Manual'
+
 
 ---
 Except:
@@ -17,15 +15,6 @@ SilverStripe\Omnipay\Model\Payment:
     - 'Dummy'
 
 SilverStripe\Omnipay\GatewayInfo:
-  SagePay_Direct:
-    parameters:
-      testMode: true
-  PayPal_Express:
-    parameters:
-      username: 'test+business_api1.i-lateral.com'
-      password: '1402304283'
-      signature: 'ACUe-E7Hjxmeel8FjYAtjnx-yjHAAe.ydmJzo80k0fF-SmSRJ.YZ0Jvs'
-      testMode: true
   Dummy:
     required_fields:
       - 'name'

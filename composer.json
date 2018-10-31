@@ -17,10 +17,7 @@
         "i-lateral/silverstripe-gallery": "^2.0",
         "i-lateral/silverstripe-socialnav": "^2.0",
         "fractas/cookiepolicy": "^2.0",
-        "heyday/silverstripe-gridfieldversionedorderablerows": "ss4-upgrade-dev",
-        "omnipay/paypal": "^2.0",
-        "omnipay/sagepay": "^2.0",
-        "omnipay/manual": "^2.0"
+        "heyday/silverstripe-gridfieldversionedorderablerows": "ss4-upgrade-dev"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7",
