@@ -17,7 +17,8 @@
         "i-lateral/silverstripe-gallery": "^2.0",
         "i-lateral/silverstripe-socialnav": "^2.0",
         "fractas/cookiepolicy": "^2.0",
-        "heyday/silverstripe-gridfieldversionedorderablerows": "ss4-upgrade-dev"
+        "heyday/silverstripe-gridfieldversionedorderablerows": "ss4-upgrade-dev",
+        "undefinedoffset/silverstripe-nocaptcha": "^2.0"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7",
