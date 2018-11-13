@@ -21,6 +21,8 @@ ilateral\SilverStripe\Users\Users:
 SilverStripe\Core\Injector\Injector:
   Fractas\CookiePolicy\CookiePolicy:
     class: AppCookiePolicy
+SilverStripe\SpamProtection\Extension\FormSpamProtectionExtension:
+    default_spam_protector: UndefinedOffset\NoCaptcha\Forms\NocaptchaProtector
 
 ## EXTENSIONS ##
 SilverStripe\SiteConfig\SiteConfig:
