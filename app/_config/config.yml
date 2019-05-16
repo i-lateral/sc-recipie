@@ -18,9 +18,6 @@ ilateral\SilverStripe\CustomMenus\Model\CustomMenuLink:
 ilateral\SilverStripe\Users\Users:
   require_verification: false
   send_verification_email: false
-SilverStripe\Core\Injector\Injector:
-  Fractas\CookiePolicy\CookiePolicy:
-    class: AppCookiePolicy
 SilverStripe\SpamProtection\Extension\FormSpamProtectionExtension:
     default_spam_protector: UndefinedOffset\NoCaptcha\Forms\NocaptchaProtector
 
