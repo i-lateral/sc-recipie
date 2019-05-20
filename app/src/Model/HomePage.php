@@ -32,7 +32,7 @@ class HomePage extends Page
                 'FeaturedProducts',
                 'Products',
                 $this->FeaturedProducts()
-            )->setConfig(GridFieldConfig_CatalogueRelated::create(CatalogueProduct::class))
+            )->setConfig(GridFieldConfig_CatalogueRelated::create(Product::class))
         );
 
         $fields->addFieldToTab(
@@ -41,7 +41,7 @@ class HomePage extends Page
                 'FeaturedCategories',
                 'Categories',
                 $this->FeaturedCategories()
-            )->setConfig(GridFieldConfig_CatalogueRelated::create(CatalogueCategory::class))
+            )->setConfig(GridFieldConfig_CatalogueRelated::create(Category::class))
         );
 
         $config = GridFieldConfig_RelationEditor::create();
