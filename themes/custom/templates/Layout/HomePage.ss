@@ -14,7 +14,7 @@
             <%t CatalogueFrontEnd.FeaturedProducts "Featured Products" %>
         </h2>
         <div class="row mt-4">
-            <% loop $FeaturedProducts %>
+            <% loop $FeaturedProducts.Sort('HomeSort', 'ASC') %>
                 <div class="col-sm-4 col-lg-3 mb-4">
                     <% include ProductSummary %>
                 </div>
@@ -27,7 +27,7 @@
             <%t CatalogueFrontEnd.FeaturedCategories "Featured Categories" %>
         </h2>
         <div class="row mt-4">
-            <% loop $FeaturedCategories %>
+            <% loop $FeaturedCategories.Sort('HomeSort', 'ASC') %>
                 <div class="col-sm-4 col-lg-3 mb-4">
                     <% include CategorySummary %>
                 </div>
