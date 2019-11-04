@@ -9,6 +9,7 @@ use SilverStripe\Lumberjack\Forms\GridFieldSiteTreeEditButton;
 use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
 use Heyday\GridFieldVersionedOrderableRows\GridFieldVersionedOrderableRows;
 use SilverCommerce\CatalogueAdmin\Forms\GridField\GridFieldConfig_CatalogueRelated;
+use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
 class HomePage extends Page
 {
@@ -26,14 +27,20 @@ class HomePage extends Page
     {
         $fields = parent::getCMSFields();
 
+        $config = GridFieldConfig_CatalogueRelated::create(Product::class);
+        $config->addComponent(new GridFieldOrderableRows('HomeSort'));
+
         $fields->addFieldToTab(
             'Root.Products',
             GridField::create(
                 'FeaturedProducts',
                 'Products',
                 $this->FeaturedProducts()
-            )->setConfig(GridFieldConfig_CatalogueRelated::create(Product::class))
+            )->setConfig($config)
         );
+
+        $config = GridFieldConfig_CatalogueRelated::create(Category::class);
+        $config->addComponent(new GridFieldOrderableRows('HomeSort'));
 
         $fields->addFieldToTab(
             'Root.Categories',

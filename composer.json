@@ -12,7 +12,6 @@
         "axllent/silverstripe-scaled-uploads": "^2.1",
         "i-lateral/silverstripe-childhubpage": "^2.0",
         "jonom/focuspoint": "^3.0",
-        "symbiote/silverstripe-gridfieldextensions": "3.1 as 3.0.x-dev",
         "i-lateral/silverstripe-custommenus": "^2.0",
         "i-lateral/silverstripe-gallery": "^2.0",
         "i-lateral/silverstripe-socialnav": "^2.0",
